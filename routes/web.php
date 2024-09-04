@@ -44,3 +44,5 @@ Route::get('/posts/{post}/comments/{comment}', function
 Route::get('/user/{name?}', function ($name='John') { 
     return 'Nama saya '.$name; 
 }); 
+
+Route::get('/greeting', [App\Http\Controllers\WelcomeController::class, 'greeting']);  
